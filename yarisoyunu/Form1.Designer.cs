@@ -35,6 +35,8 @@
             this.p1 = new System.Windows.Forms.PictureBox();
             this.start = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.p2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1)).BeginInit();
             this.SuspendLayout();
@@ -50,9 +52,9 @@
             // p2
             // 
             this.p2.Image = ((System.Drawing.Image)(resources.GetObject("p2.Image")));
-            this.p2.Location = new System.Drawing.Point(1, 209);
+            this.p2.Location = new System.Drawing.Point(1, 174);
             this.p2.Name = "p2";
-            this.p2.Size = new System.Drawing.Size(88, 117);
+            this.p2.Size = new System.Drawing.Size(97, 130);
             this.p2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.p2.TabIndex = 2;
             this.p2.TabStop = false;
@@ -60,9 +62,9 @@
             // p1
             // 
             this.p1.Image = ((System.Drawing.Image)(resources.GetObject("p1.Image")));
-            this.p1.Location = new System.Drawing.Point(1, 52);
+            this.p1.Location = new System.Drawing.Point(1, 38);
             this.p1.Name = "p1";
-            this.p1.Size = new System.Drawing.Size(88, 127);
+            this.p1.Size = new System.Drawing.Size(97, 140);
             this.p1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.p1.TabIndex = 3;
             this.p1.TabStop = false;
@@ -82,12 +84,30 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel2.Location = new System.Drawing.Point(1, 171);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(441, 10);
+            this.panel2.TabIndex = 5;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel3.Location = new System.Drawing.Point(1, 297);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(441, 10);
+            this.panel3.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(459, 319);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.start);
             this.Controls.Add(this.p1);
             this.Controls.Add(this.p2);
@@ -107,6 +127,8 @@
         private System.Windows.Forms.PictureBox p1;
         private System.Windows.Forms.Button start;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 

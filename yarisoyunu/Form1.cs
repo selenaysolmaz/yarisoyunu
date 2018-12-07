@@ -12,6 +12,7 @@ namespace yarisoyunu
 {
     public partial class Form1 : Form
     {
+    
         public Form1()
         {
             InitializeComponent();
@@ -19,12 +20,13 @@ namespace yarisoyunu
         private void timer1_Tick(object sender, EventArgs e)
         {
             Random rnd = new Random();
+
             int rand1 = rnd.Next(0, 10);
             p1.Left += rand1;
-
+            //random olusturup resim in soluna ekle yani ilerlettik.
             int rand2 = rnd.Next(0, 10);
             p2.Left += rand2;
-
+            //bitiş çizgisine ilk ulasan.
             if(p1.Right>=panel1.Left || p2.Right>=panel1.Left)
             {
                 timer1.Stop();
